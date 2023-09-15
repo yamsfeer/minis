@@ -1,0 +1,8 @@
+{
+  "name": "minis",
+  "private": "true",
+  "workspaces": ["packages/*"],
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^11.2.0"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      font-size: 20px;
+    }
+
+    body div {
+      font-size: 40px;
+    }
+  </style>
+  <style>
+    p,
+    textarea {
+      font-size: 100px;
+    }
+
+    .container {
+      font-size: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script>
+    const elements = document.querySelectorAll('style')
+    elements.forEach(ele => {
+      console.log(Array.from(ele.sheet.cssRules))
+      Array.from(ele.sheet.cssRules).forEach(async (styleRule) => {
+        const prefix = '[data-qiankun]'
+        const selector = styleRule.selectorText
+        const nextSelector = selector.split(',').map(item => `${prefix} ${item}`).join(',')
+
+        // debugger
+        styleRule.cssText = styleRule.cssText.replace(selector, nextSelector)
+
+        console.log(styleRule.cssText.replace(selector, nextSelector))
+      })
+    })
+  </script>
+</body>
+
+</html>

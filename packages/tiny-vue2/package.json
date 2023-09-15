@@ -1,0 +1,12 @@
+{
+  "name": "@yamstoy/toy-vue",
+  "version": "0.0.1",
+  "description": "a toy vue",
+  "main": "dist/toy-vue.js",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./src/vue.js --outdir ./dist"
+  },
+  "author": "yamsfeer",
+  "license": "ISC"
+}

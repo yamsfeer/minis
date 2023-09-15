@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>toy vue</title>
+</head>
+<body>
+  <div id="app2">
+    <p>{{ msg }}</p>
+    <div>
+      <input v-model="count">
+      <p>{{ count }}</p>
+      <button v-on:click="decrease">decrease</button>
+      <button v-on:click="increase">increase</button>
+    </div>
+  </div>
+
+  <script type="module" src="dist/toy-vue.js"></script>
+  <script type="module">
+    import Vue from 'dist/toy-vue.js'
+    const vm = new Vue({
+        el: '#app2',
+        data: {
+          count: 0,
+          msg: 'hello world'
+        },
+        methods: {
+          increase() {
+            this.count++
+          },
+          decrease() {
+            this.count = this.count > 0
+              ? this.count - 1
+              : 0
+          }
+        }
+      })
+    window.vm = vm
+  </script>
+</body>
+</html>

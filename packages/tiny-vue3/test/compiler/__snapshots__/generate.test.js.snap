@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`compiler:generate > basic generate code 1`] = `
+"function render(){
+  return h('div',null,[h('p',null,['hello']),h('p',{id:'foo'},['world'])])
+}"
+`;
+
+exports[`compiler:generate basic generate code 1`] = `
+"function render(){
+  return h('div',{v-show:'isShow'},[ctx.foo])
+}function render(){
+  return h('div',null,[h('p',null,['hello']),h('p',{id:'foo'},['world'])])
+}"
+`;

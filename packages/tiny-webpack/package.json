@@ -1,0 +1,16 @@
+{
+  "name": "tiny-webpack",
+  "version": "1.0.0",
+  "description": "A tiny webpack",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "yamsfeer",
+  "license": "ISC",
+  "dependencies": {
+    "tapable": "^2.2.1"
+  }
+}

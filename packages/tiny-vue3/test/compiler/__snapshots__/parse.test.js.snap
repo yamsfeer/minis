@@ -1,0 +1,289 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`compiler:basic parse > basic analyse 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": "hello",
+              "type": Symbol(Text),
+            },
+          ],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+        {
+          "children": [
+            {
+              "content": "world",
+              "type": Symbol(Text),
+            },
+          ],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+      ],
+      "tag": "div",
+      "type": Symbol(Element),
+    },
+  ],
+  "type": Symbol(Root),
+}
+`;
+
+exports[`compiler:basic parse > basic tokenize for tag 1`] = `
+[
+  {
+    "name": "div",
+    "type": Symbol(tagOpen),
+  },
+  {
+    "name": "p",
+    "type": Symbol(tagOpen),
+  },
+  {
+    "content": "hello",
+    "type": Symbol(text),
+  },
+  {
+    "name": "p",
+    "type": Symbol(tagEnd),
+  },
+  {
+    "name": "div",
+    "type": Symbol(tagEnd),
+  },
+]
+`;
+
+exports[`compiler:parse > complete parse 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": "hello ",
+              "type": Symbol(Text),
+            },
+            {
+              "content": {
+                "content": " data ",
+                "type": Symbol(Expression),
+              },
+              "type": Symbol(Interpolation),
+            },
+            {
+              "content": "
+        ",
+              "type": Symbol(Text),
+            },
+          ],
+          "isSelfClosing": false,
+          "props": [
+            {
+              "name": ":title",
+              "type": Symbol(Attributes),
+              "value": "title",
+            },
+            {
+              "name": "v-show",
+              "type": Symbol(Attributes),
+              "value": "isShow",
+            },
+          ],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+        {
+          "content": "
+      ",
+          "type": Symbol(Text),
+        },
+      ],
+      "isSelfClosing": false,
+      "props": [
+        {
+          "name": "foo",
+          "type": Symbol(Attributes),
+          "value": "foo",
+        },
+        {
+          "name": "bar",
+          "type": Symbol(Attributes),
+          "value": "bar",
+        },
+        {
+          "name": "baz",
+          "type": Symbol(Attributes),
+          "value": "foo",
+        },
+        {
+          "name": "@click",
+          "type": Symbol(Attributes),
+          "value": "handleClick",
+        },
+      ],
+      "tag": "div",
+      "type": Symbol(Element),
+    },
+    {
+      "content": "
+    ",
+      "type": Symbol(Text),
+    },
+  ],
+  "type": Symbol(Root),
+}
+`;
+
+exports[`compiler:basic parse basic tokenize for tag 1`] = `
+[
+  {
+    "name": "div",
+    "type": Symbol(tagOpen),
+  },
+  {
+    "name": "p",
+    "type": Symbol(tagOpen),
+  },
+  {
+    "content": "hello",
+    "type": Symbol(text),
+  },
+  {
+    "name": "p",
+    "type": Symbol(tagEnd),
+  },
+  {
+    "name": "div",
+    "type": Symbol(tagEnd),
+  },
+]
+`;
+
+exports[`compiler:basic parse basic analyse 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": "hello",
+              "type": Symbol(Text),
+            },
+          ],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+        {
+          "children": [
+            {
+              "content": "world",
+              "type": Symbol(Text),
+            },
+          ],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+      ],
+      "tag": "div",
+      "type": Symbol(Element),
+    },
+  ],
+  "type": Symbol(Root),
+}
+`;
+
+exports[`compiler:parse complete parse 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": "hello ",
+              "type": Symbol(Text),
+            },
+            {
+              "content": {
+                "content": " data ",
+                "type": Symbol(Expression),
+              },
+              "type": Symbol(Interpolation),
+            },
+            {
+              "content": 
+"
+        "
+,
+              "type": Symbol(Text),
+            },
+          ],
+          "isSelfClosing": false,
+          "props": [
+            {
+              "name": ":title",
+              "type": Symbol(Attributes),
+              "value": "title",
+            },
+            {
+              "name": "v-show",
+              "type": Symbol(Attributes),
+              "value": "isShow",
+            },
+          ],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+        {
+          "content": 
+"
+      "
+,
+          "type": Symbol(Text),
+        },
+      ],
+      "isSelfClosing": false,
+      "props": [
+        {
+          "name": "foo",
+          "type": Symbol(Attributes),
+          "value": "foo",
+        },
+        {
+          "name": "bar",
+          "type": Symbol(Attributes),
+          "value": "bar",
+        },
+        {
+          "name": "baz",
+          "type": Symbol(Attributes),
+          "value": "foo",
+        },
+        {
+          "name": "@click",
+          "type": Symbol(Attributes),
+          "value": "handleClick",
+        },
+      ],
+      "tag": "div",
+      "type": Symbol(Element),
+    },
+    {
+      "content": 
+"
+    "
+,
+      "type": Symbol(Text),
+    },
+  ],
+  "type": Symbol(Root),
+}
+`;

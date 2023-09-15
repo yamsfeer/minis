@@ -1,0 +1,8 @@
+{
+  "name": "@minis/toy-browser",
+  "description": "A tiny browser",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "yamsfeer",
+  "license": "ISC"
+}

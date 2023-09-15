@@ -1,0 +1,20 @@
+{
+  "name": "tiny-vue3",
+  "version": "1.0.0",
+  "description": "tiny vue3",
+  "main": "dist/tiny-vue.umd.cjs",
+  "module": "dist/tiny-vue.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/vue3.mjs",
+      "import": "./dist/vue3.ejs"
+    },
+    "./reactivity": {
+      "require": "./reactivity/dist/reactivity.mjs",
+      "import": "./reactivity/dist/reactivity.ejs"
+    }
+  },
+  "author": "yamsfeer",
+  "license": "ISC"
+}

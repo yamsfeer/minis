@@ -1,0 +1,11 @@
+{
+  "name": "toy-js-engine",
+  "description": "",
+  "version": "1.0.1",
+  "main": "index.js",
+  "author": "yamsfeer",
+  "license": "ISC",
+  "dependencies": {
+    "linkedlist": "^1.0.1"
+  }
+}

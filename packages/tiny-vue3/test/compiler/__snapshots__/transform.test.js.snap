@@ -1,0 +1,541 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`compile:trasnform > basic transform 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": "hello",
+              "jsNode": {
+                "type": Symbol(StringLiteral),
+                "value": "hello",
+              },
+              "type": Symbol(Text),
+            },
+          ],
+          "jsNode": {
+            "args": [
+              {
+                "type": Symbol(StringLiteral),
+                "value": "p",
+              },
+              {
+                "type": Symbol(ObjectLiteral),
+                "value": {
+                  "id": "foo",
+                },
+              },
+              {
+                "elements": [
+                  {
+                    "type": Symbol(StringLiteral),
+                    "value": "hello",
+                  },
+                ],
+                "type": Symbol(ArrayExpression),
+              },
+            ],
+            "callee": {
+              "name": "h",
+              "type": Symbol(Identifier),
+            },
+            "type": Symbol(CallExpression),
+          },
+          "props": [
+            {
+              "name": "id",
+              "type": Symbol(Attributes),
+              "value": "foo",
+            },
+          ],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+        {
+          "children": [
+            {
+              "content": "world",
+              "jsNode": {
+                "type": Symbol(StringLiteral),
+                "value": "world",
+              },
+              "type": Symbol(Text),
+            },
+          ],
+          "jsNode": {
+            "args": [
+              {
+                "type": Symbol(StringLiteral),
+                "value": "p",
+              },
+              {
+                "type": Symbol(ObjectLiteral),
+                "value": null,
+              },
+              {
+                "elements": [
+                  {
+                    "type": Symbol(StringLiteral),
+                    "value": "world",
+                  },
+                ],
+                "type": Symbol(ArrayExpression),
+              },
+            ],
+            "callee": {
+              "name": "h",
+              "type": Symbol(Identifier),
+            },
+            "type": Symbol(CallExpression),
+          },
+          "props": [],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+      ],
+      "jsNode": {
+        "args": [
+          {
+            "type": Symbol(StringLiteral),
+            "value": "div",
+          },
+          {
+            "type": Symbol(ObjectLiteral),
+            "value": null,
+          },
+          {
+            "elements": [
+              {
+                "args": [
+                  {
+                    "type": Symbol(StringLiteral),
+                    "value": "p",
+                  },
+                  {
+                    "type": Symbol(ObjectLiteral),
+                    "value": {
+                      "id": "foo",
+                    },
+                  },
+                  {
+                    "elements": [
+                      {
+                        "type": Symbol(StringLiteral),
+                        "value": "hello",
+                      },
+                    ],
+                    "type": Symbol(ArrayExpression),
+                  },
+                ],
+                "callee": {
+                  "name": "h",
+                  "type": Symbol(Identifier),
+                },
+                "type": Symbol(CallExpression),
+              },
+              {
+                "args": [
+                  {
+                    "type": Symbol(StringLiteral),
+                    "value": "p",
+                  },
+                  {
+                    "type": Symbol(ObjectLiteral),
+                    "value": null,
+                  },
+                  {
+                    "elements": [
+                      {
+                        "type": Symbol(StringLiteral),
+                        "value": "world",
+                      },
+                    ],
+                    "type": Symbol(ArrayExpression),
+                  },
+                ],
+                "callee": {
+                  "name": "h",
+                  "type": Symbol(Identifier),
+                },
+                "type": Symbol(CallExpression),
+              },
+            ],
+            "type": Symbol(ArrayExpression),
+          },
+        ],
+        "callee": {
+          "name": "h",
+          "type": Symbol(Identifier),
+        },
+        "type": Symbol(CallExpression),
+      },
+      "props": [],
+      "tag": "div",
+      "type": Symbol(Element),
+    },
+  ],
+  "jsNode": {
+    "body": [
+      {
+        "return": {
+          "args": [
+            {
+              "type": Symbol(StringLiteral),
+              "value": "div",
+            },
+            {
+              "type": Symbol(ObjectLiteral),
+              "value": null,
+            },
+            {
+              "elements": [
+                {
+                  "args": [
+                    {
+                      "type": Symbol(StringLiteral),
+                      "value": "p",
+                    },
+                    {
+                      "type": Symbol(ObjectLiteral),
+                      "value": {
+                        "id": "foo",
+                      },
+                    },
+                    {
+                      "elements": [
+                        {
+                          "type": Symbol(StringLiteral),
+                          "value": "hello",
+                        },
+                      ],
+                      "type": Symbol(ArrayExpression),
+                    },
+                  ],
+                  "callee": {
+                    "name": "h",
+                    "type": Symbol(Identifier),
+                  },
+                  "type": Symbol(CallExpression),
+                },
+                {
+                  "args": [
+                    {
+                      "type": Symbol(StringLiteral),
+                      "value": "p",
+                    },
+                    {
+                      "type": Symbol(ObjectLiteral),
+                      "value": null,
+                    },
+                    {
+                      "elements": [
+                        {
+                          "type": Symbol(StringLiteral),
+                          "value": "world",
+                        },
+                      ],
+                      "type": Symbol(ArrayExpression),
+                    },
+                  ],
+                  "callee": {
+                    "name": "h",
+                    "type": Symbol(Identifier),
+                  },
+                  "type": Symbol(CallExpression),
+                },
+              ],
+              "type": Symbol(ArrayExpression),
+            },
+          ],
+          "callee": {
+            "name": "h",
+            "type": Symbol(Identifier),
+          },
+          "type": Symbol(CallExpression),
+        },
+        "type": Symbol(ReturnStatement),
+      },
+    ],
+    "id": {
+      "name": "render",
+      "type": Symbol(Identifier),
+    },
+    "params": [],
+    "type": Symbol(FunctionDecl),
+  },
+  "type": Symbol(Root),
+}
+`;
+
+exports[`compile:trasnform basic transform 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "content": "hello",
+              "jsNode": {
+                "type": Symbol(StringLiteral),
+                "value": "hello",
+              },
+              "type": Symbol(Text),
+            },
+          ],
+          "jsNode": {
+            "args": [
+              {
+                "type": Symbol(StringLiteral),
+                "value": "p",
+              },
+              {
+                "type": Symbol(ObjectLiteral),
+                "value": {
+                  "id": "foo",
+                },
+              },
+              {
+                "elements": [
+                  {
+                    "type": Symbol(StringLiteral),
+                    "value": "hello",
+                  },
+                ],
+                "type": Symbol(ArrayExpression),
+              },
+            ],
+            "callee": {
+              "name": "h",
+              "type": Symbol(Identifier),
+            },
+            "type": Symbol(CallExpression),
+          },
+          "props": [
+            {
+              "name": "id",
+              "type": Symbol(Attributes),
+              "value": "foo",
+            },
+          ],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+        {
+          "children": [
+            {
+              "content": "world",
+              "jsNode": {
+                "type": Symbol(StringLiteral),
+                "value": "world",
+              },
+              "type": Symbol(Text),
+            },
+          ],
+          "jsNode": {
+            "args": [
+              {
+                "type": Symbol(StringLiteral),
+                "value": "p",
+              },
+              {
+                "type": Symbol(ObjectLiteral),
+                "value": null,
+              },
+              {
+                "elements": [
+                  {
+                    "type": Symbol(StringLiteral),
+                    "value": "world",
+                  },
+                ],
+                "type": Symbol(ArrayExpression),
+              },
+            ],
+            "callee": {
+              "name": "h",
+              "type": Symbol(Identifier),
+            },
+            "type": Symbol(CallExpression),
+          },
+          "props": [],
+          "tag": "p",
+          "type": Symbol(Element),
+        },
+      ],
+      "jsNode": {
+        "args": [
+          {
+            "type": Symbol(StringLiteral),
+            "value": "div",
+          },
+          {
+            "type": Symbol(ObjectLiteral),
+            "value": null,
+          },
+          {
+            "elements": [
+              {
+                "args": [
+                  {
+                    "type": Symbol(StringLiteral),
+                    "value": "p",
+                  },
+                  {
+                    "type": Symbol(ObjectLiteral),
+                    "value": {
+                      "id": "foo",
+                    },
+                  },
+                  {
+                    "elements": [
+                      {
+                        "type": Symbol(StringLiteral),
+                        "value": "hello",
+                      },
+                    ],
+                    "type": Symbol(ArrayExpression),
+                  },
+                ],
+                "callee": {
+                  "name": "h",
+                  "type": Symbol(Identifier),
+                },
+                "type": Symbol(CallExpression),
+              },
+              {
+                "args": [
+                  {
+                    "type": Symbol(StringLiteral),
+                    "value": "p",
+                  },
+                  {
+                    "type": Symbol(ObjectLiteral),
+                    "value": null,
+                  },
+                  {
+                    "elements": [
+                      {
+                        "type": Symbol(StringLiteral),
+                        "value": "world",
+                      },
+                    ],
+                    "type": Symbol(ArrayExpression),
+                  },
+                ],
+                "callee": {
+                  "name": "h",
+                  "type": Symbol(Identifier),
+                },
+                "type": Symbol(CallExpression),
+              },
+            ],
+            "type": Symbol(ArrayExpression),
+          },
+        ],
+        "callee": {
+          "name": "h",
+          "type": Symbol(Identifier),
+        },
+        "type": Symbol(CallExpression),
+      },
+      "props": [],
+      "tag": "div",
+      "type": Symbol(Element),
+    },
+  ],
+  "jsNode": {
+    "body": [
+      {
+        "return": {
+          "args": [
+            {
+              "type": Symbol(StringLiteral),
+              "value": "div",
+            },
+            {
+              "type": Symbol(ObjectLiteral),
+              "value": null,
+            },
+            {
+              "elements": [
+                {
+                  "args": [
+                    {
+                      "type": Symbol(StringLiteral),
+                      "value": "p",
+                    },
+                    {
+                      "type": Symbol(ObjectLiteral),
+                      "value": {
+                        "id": "foo",
+                      },
+                    },
+                    {
+                      "elements": [
+                        {
+                          "type": Symbol(StringLiteral),
+                          "value": "hello",
+                        },
+                      ],
+                      "type": Symbol(ArrayExpression),
+                    },
+                  ],
+                  "callee": {
+                    "name": "h",
+                    "type": Symbol(Identifier),
+                  },
+                  "type": Symbol(CallExpression),
+                },
+                {
+                  "args": [
+                    {
+                      "type": Symbol(StringLiteral),
+                      "value": "p",
+                    },
+                    {
+                      "type": Symbol(ObjectLiteral),
+                      "value": null,
+                    },
+                    {
+                      "elements": [
+                        {
+                          "type": Symbol(StringLiteral),
+                          "value": "world",
+                        },
+                      ],
+                      "type": Symbol(ArrayExpression),
+                    },
+                  ],
+                  "callee": {
+                    "name": "h",
+                    "type": Symbol(Identifier),
+                  },
+                  "type": Symbol(CallExpression),
+                },
+              ],
+              "type": Symbol(ArrayExpression),
+            },
+          ],
+          "callee": {
+            "name": "h",
+            "type": Symbol(Identifier),
+          },
+          "type": Symbol(CallExpression),
+        },
+        "type": Symbol(ReturnStatement),
+      },
+    ],
+    "id": {
+      "name": "render",
+      "type": Symbol(Identifier),
+    },
+    "params": [],
+    "type": Symbol(FunctionDecl),
+  },
+  "type": Symbol(Root),
+}
+`;

@@ -1,0 +1,10 @@
+{
+  "name": "tiny-qiankun",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "author": "yamsfeer",
+  "license": "ISC"
+}
